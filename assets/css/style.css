@@ -28,6 +28,9 @@ header {
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a {
@@ -39,7 +42,7 @@ h1 {
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #252525
+    color: #252525;
 
 }
 
@@ -66,6 +69,21 @@ nav {
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
+    /* 0% tells this element to start at the top of the parent, and 100% is to start at the bottom */
+    top: 100%;
+}
+
+/* Nav toggle NOTE THE TILDE ~ is NOT a - */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
 /* Main content */
