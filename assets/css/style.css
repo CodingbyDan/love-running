@@ -357,7 +357,7 @@ main {
 
     .join-button:hover {
         background-color: #fafafa;
-        color: 454b1b;
+        color: #454b1b;
     }
 
     /* Align the mental divs to the right of the page to utilise the space on tablet sized screens */
